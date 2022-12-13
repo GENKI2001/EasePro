@@ -1,0 +1,206 @@
+body{
+    margin: 0;
+}
+
+
+.header{
+    width: 100%;
+}
+
+.header-top {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 150px;
+    background-color: #f9fbfe;
+    z-index: 2;
+    top: 0;
+}
+
+#header-top__left-img{
+    width: 200px;
+}
+
+.header-top__right-container{
+    display: flex;
+}
+
+.header-top__right-container > .content{
+    font-size: 15px;
+    color: #474a47;
+    border: 1.5px solid #474a47;
+    border-radius: 5px;
+    line-height: 40px;
+    padding: 0 16px;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.header-top__right-container > .content:hover{
+    background-color: #474a47;
+    color: white;
+}
+
+.navigator{
+    box-sizing: border-box;
+    padding: 5px 150px;
+    width: 100%;
+    background-color: #474a47;
+}
+
+.navigator nav{
+    list-style: none;
+}
+
+.navigator nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0;
+}
+
+.navigator nav ul li{
+    color: white;
+    width: 100%;
+    justify-content: center;
+    list-style: none;
+    display: block;
+    margin: 0 0;
+    text-align: center;
+}
+
+.navigator nav ul li > .content{
+    display: block;
+    padding: 15px 7px;
+    cursor: pointer;
+    color: #fff;
+    line-height: 15px;
+    transition: all .2s;
+    text-decoration: none;
+    border: 1.0px solid #474a47;
+    border-radius: 3px;
+}
+
+.navigator nav ul li > .content:hover {
+    border: 1.0px solid #fff;
+}
+
+.main{
+    padding: 10px 150px;
+    display: flex;
+}
+
+.left-sidebar{
+    position: sticky;
+    width: 20%;
+    top: 0px;
+    margin: 10px 30px;
+    height: 300px;
+}
+
+.menu{
+    overflow: hidden;
+    font-size: 1.0rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0b200;
+}
+
+.kajou {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.left-sidebar ul{
+    font-size: 0.8rem;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.left-sidebar ul ul li{
+    position: relative; 
+    font-size: 0.8rem;
+    padding: 10px 0 10px 0px;
+    margin-bottom: 8px;
+    margin-left: 20px;
+    border-bottom: dotted 1px #d8d8d8;
+    line-height: 1.0;
+    text-decoration: none;
+}
+.left-sidebar ul ul li a{
+    color: inherit;
+    text-decoration: none;
+    transition: .2s;
+}
+.left-sidebar ul ul li a:hover{
+    color: #8d8383;
+}
+
+
+.right-main{
+    width: 80%;
+}
+
+strong{
+    font-weight: bold;
+    margin: 50px 0;
+    background: linear-gradient(transparent 60%,#cce5ff 60%);
+}
+
+.title {
+    background: #f7f7f7;
+    border-left: solid #f89174 5px;
+    padding: 14px 12px;
+    border-bottom: solid 3px #dadada;
+    margin: 50px 0;
+    clear: both;
+}
+
+.colabo-img{
+    margin: 30px 0;
+    width: 80%;
+}
+
+.colabo-img-code{
+    margin: 10px 0;
+    width: 40%;
+}
+
+.code{
+    border: 1.5px solid #303030;
+    border-radius: 5px;
+    background: #303030;
+    padding: 15px 15px;
+    color: white;
+}
+
+.subtitle{
+    padding-left: 10px;
+    border-left: 6px solid #5ca3c5;
+    border-bottom: 1px solid #5ca3c5;
+}
+
+.previous-next{
+    display: flex;
+}
+
+.next {
+    width: 40%;
+    text-align: center;
+    font-size: 15px;
+    color: #474a47;
+    border: 1.5px solid #474a47;
+    border-radius: 10px;
+    line-height: 40px;
+    padding: 5px 16px;
+    margin: 30px 15px;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+  }
+
+.next:hover{
+    color: white;
+    background-color: #474a47;
+}
