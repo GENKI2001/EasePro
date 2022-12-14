@@ -199,7 +199,17 @@ strong{
     cursor: pointer;
     transition: .3s;
     text-decoration: none;
-  }
+}
+.next{
+    font-size: 15px;
+    color: #474a47;
+    line-height: 40px;
+    padding: 5px 16px;
+    margin: 30px 15px;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+}
 
 .next:hover{
     color: white;
