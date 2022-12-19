@@ -1,22 +1,33 @@
 body{
     margin: 0;
+    min-width: 380px;
 }
-
 
 .header{
     width: 100%;
 }
+
+
 
 .header-top {
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 17px 150px;
+    padding: 17px 5%;
     background-color: #f9fbfe;
-    z-index: 2;
-    top: 0;
 }
+
+@media screen and (max-width: 620px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+    .header-top {
+        display: block;
+    }
+    .header-top__right-container{
+        justify-content: center;
+    }
+}
+
 
 #header-top__left-img{
     width: 200px;
@@ -27,7 +38,7 @@ body{
 }
 
 .header-top__right-container > .content{
-    font-size: 15px;
+    font-size: 14px;
     color: #474a47;
     border: 1.5px solid #474a47;
     border-radius: 5px;
@@ -46,19 +57,21 @@ body{
 
 .navigator{
     box-sizing: border-box;
-    padding: 5px 150px;
+    padding: 5px 5%;
     width: 100%;
     background-color: #474a47;
 }
 
 .navigator nav{
     list-style: none;
+    width: 100%;
 }
 
 .navigator nav ul{
     display: flex;
     justify-content: space-evenly;
     margin: 0 0;
+    padding-inline-start: 0px;
 }
 
 .navigator nav ul li{
@@ -83,12 +96,23 @@ body{
     border-radius: 3px;
 }
 
+@media screen and (max-width: 620px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+    .navigator nav ul li > .content {
+        font-size: 15px;
+    }
+    .navigator{
+        box-sizing: border-box;
+        padding: 5px 0%;
+    }
+}
+
 .navigator nav ul li > .content:hover {
     border: 1.0px solid #fff;
 }
 
 .main{
-    padding: 10px 150px;
+    padding: 10px 5%;
     display: flex;
 }
 
@@ -99,6 +123,13 @@ body{
     margin: 10px 30px;
     height: 300px;
 }
+
+@media screen and (max-width: 620px) {
+    .left-sidebar{
+        display: none;
+    }
+}
+
 
 .menu{
     overflow: hidden;
@@ -141,6 +172,13 @@ body{
 .right-main{
     width: 80%;
 }
+
+@media screen and (max-width: 620px) {
+    .right-main{
+        width: 100%;
+    }
+}
+
 
 strong{
     font-weight: bold;
